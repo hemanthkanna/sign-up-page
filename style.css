@@ -1,0 +1,151 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: wedFont;
+  src: url(./font/Norse-Bold.otf);
+}
+
+body{
+  font-size: 18px;
+  color: #000;
+  font-weight: 500;
+  background-color:#eee;
+}
+
+.container{
+  display:flex;
+  width: 100vw;
+  min-height: 100vh;
+  line-height: 2;
+}
+
+/* LEFT SIDE */
+
+.picture-card{
+  background-image: url(halie-west-25xggax4bSA-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  min-width: 40%;
+  font-family: webFont;
+  color: whitesmoke;
+}
+
+.logo{
+  background-color:#000;
+  opacity: 0.7;
+  height: 8em;
+  position: relative;
+  top: 10em;
+  padding: 5px 30px;
+}
+
+img{
+  width: 6rem;
+  padding: 10px;
+}
+
+h1{
+  position: absolute;
+  top: 0;
+  left: 2em;
+  font-size: 4em;
+}
+
+/* RIGHT SIDE */
+
+.form-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+}
+
+.header{
+  font-weight: 700;  
+  padding: 30px;
+}
+
+/* FORM */
+
+.box{
+  padding: 30px;
+  box-shadow: 0 10px 8px rgba(0, 0, 0, 0.19),
+              0 6px 12px rgba(7, 6, 6, 0.23);
+}
+
+.input-section{
+  display: flex;
+  flex-direction:row;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+label{
+  position: relative;
+  width: 15rem;
+  margin-bottom: 15px;
+}
+
+input{
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 2px solid #E5E7EB;
+  font-size: .9rem;
+  margin-top: 3px;
+}
+
+
+/* SUBMIT SECTION */
+
+
+.submit-section{
+  padding: 50px 0 10px 30px;
+}
+
+button {
+  border: none;
+  color: #090909;
+  padding: 0.7em 1.7em;
+  font-size: 18px;
+  border-radius: 0.5em;
+  background: #596D48;
+  color: whitesmoke;
+  border: 1px solid #e8e8e8;
+  transition: all .3s;
+  box-shadow: 6px 6px 12px #c5c5c5,
+              -6px -6px 12px #ffffff;
+ }
+ 
+ button:active {
+  color: #666;
+  box-shadow: inset 4px 4px 12px #c5c5c5,
+              inset -4px -4px 12px #ffffff;
+ }
+
+ .log_in_section{
+   padding-left: 30px;
+   margin-bottom: 20px;
+ }
+
+ #log_in_link {
+   color:green;
+   text-decoration: none;
+   font-weight: 700;
+ }
+
+ footer{
+   padding: 10px;
+   background-color: #090909;
+   text-align: center;
+   color: #fff;
+ }
+
+ #git_link{
+   color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+ }

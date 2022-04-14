@@ -4,8 +4,8 @@
   box-sizing: border-box;
 }
 
-@font-face {
-  font-family: wedFont;
+@font-face{
+  font-family: webFont;
   src: url(./font/Norse-Bold.otf);
 }
 
@@ -20,7 +20,7 @@ body{
   display:flex;
   width: 100vw;
   min-height: 100vh;
-  line-height: 2;
+  line-height: 1.5;
 }
 
 /* LEFT SIDE */
@@ -44,15 +44,16 @@ body{
 }
 
 img{
-  width: 6rem;
+  width: 6.5rem;
   padding: 10px;
+  margin-left: 30px;
 }
 
 h1{
   position: absolute;
   top: 0;
   left: 2em;
-  font-size: 4em;
+  font-size: 5.4em;
 }
 
 /* RIGHT SIDE */
@@ -65,14 +66,14 @@ h1{
 }
 
 .header{
-  font-weight: 700;  
+  font-weight: 500;  
   padding: 30px;
 }
 
 /* FORM */
 
 .box{
-  padding: 30px;
+  padding: 35px 30px;
   box-shadow: 0 10px 8px rgba(0, 0, 0, 0.19),
               0 6px 12px rgba(7, 6, 6, 0.23);
 }
@@ -81,21 +82,40 @@ h1{
   display: flex;
   flex-direction:row;
   flex-wrap: wrap;
-  gap: 8px;
 }
 
 label{
   position: relative;
   width: 15rem;
   margin-bottom: 15px;
+  padding:1vw;
 }
 
 input{
   padding: 5px 10px;
   border-radius: 5px;
-  border: 2px solid #E5E7EB;
-  font-size: .9rem;
+  border:#E5E7EB;
   margin-top: 3px;
+}
+
+input:focus{
+  outline: none;
+  box-shadow: 5px 4px rgba(3, 143, 236, 0.19);
+}
+
+input:invalid:focus {
+  border: 2px solid rgb(255, 69, 100);
+}
+
+input:focus:valid {
+  border: 2px solid rgb(0, 183, 255);
+}
+
+.error{
+  font-size: .7rem;
+  color: rgb(255, 69, 100);
+  position: absolute;
+  text-transform: uppercase;
 }
 
 
@@ -146,6 +166,6 @@ button {
 
  #git_link{
    color: #fff;
-  text-decoration: none;
-  font-weight: 700;
+   text-decoration: none;
+   font-weight: 700;
  }
